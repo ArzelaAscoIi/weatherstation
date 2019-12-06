@@ -1,1 +1,243 @@
-{}
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/output.json",
+    "type": "object",
+    "title": "The Output schema",
+    "required": [
+        "roof",
+        "ground"
+    ],
+    "properties": {
+        "roof": {
+            "$id": "#/properties/roof",
+            "type": "object",
+            "title": "The Roof Schema",
+            "required": [
+                "timestamp",
+                "recordnumber",
+                "batteryVoltage",
+                "atmosphericPressure",
+                "windSpeed",
+                "windDirection",
+                "globalRadiation",
+                "diffuseRadiation"
+            ],
+            "properties": {
+                "timestamp": {
+                    "$id": "#/properties/roof/properties/timestamp",
+                    "type": "string",
+                    "title": "The Timestamp Schema",
+                    "default": "",
+                    "examples": [
+                        "Fri, 06 Dec 2019 06:52:23 GMT"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "recordnumber": {
+                    "$id": "#/properties/roof/properties/recordnumber",
+                    "type": "integer",
+                    "title": "The Recordnumber Schema",
+                    "default": 0,
+                    "examples": [
+                        7497453
+                    ]
+                },
+                "batteryVoltage": {
+                    "$id": "#/properties/roof/properties/batteryVoltage",
+                    "type": "number",
+                    "title": "The Batteryvoltage Schema",
+                    "default": 0.0,
+                    "examples": [
+                        11.67466
+                    ]
+                },
+                "atmosphericPressure": {
+                    "$id": "#/properties/roof/properties/atmosphericPressure",
+                    "type": "number",
+                    "title": "The Atmosphericpressure Schema",
+                    "default": 0.0,
+                    "examples": [
+                        981.8739
+                    ]
+                },
+                "windSpeed": {
+                    "$id": "#/properties/roof/properties/windSpeed",
+                    "type": "number",
+                    "title": "The Windspeed Schema",
+                    "default": 0.0,
+                    "examples": [
+                        7.9576
+                    ]
+                },
+                "windDirection": {
+                    "$id": "#/properties/roof/properties/windDirection",
+                    "type": "number",
+                    "title": "The Winddirection Schema",
+                    "default": 0.0,
+                    "examples": [
+                        219.0235
+                    ]
+                },
+                "globalRadiation": {
+                    "$id": "#/properties/roof/properties/globalRadiation",
+                    "type": "number",
+                    "title": "The Globalradiation Schema",
+                    "default": 0.0,
+                    "examples": [
+                        13.2091
+                    ]
+                },
+                "diffuseRadiation": {
+                    "$id": "#/properties/roof/properties/diffuseRadiation",
+                    "type": "number",
+                    "title": "The Diffuseradiation Schema",
+                    "default": 0.0,
+                    "examples": [
+                        11.00558
+                    ]
+                }
+            }
+        },
+        "ground": {
+            "$id": "#/properties/ground",
+            "type": "object",
+            "title": "The Ground Schema",
+            "required": [
+                "timestamp",
+                "recordnumber",
+                "batteryVoltage",
+                "airTemperature",
+                "humidity",
+                "5cmTemperature",
+                "10cmTemperature",
+                "20cmTemperature",
+                "50cmTemperature",
+                "100cmTemperature",
+                "rainDropCount_2",
+                "rainDropCount_kip",
+                "evapoTranspiration"
+            ],
+            "properties": {
+                "timestamp": {
+                    "$id": "#/properties/ground/properties/timestamp",
+                    "type": "string",
+                    "title": "The Timestamp Schema",
+                    "default": "",
+                    "examples": [
+                        "Fri, 06 Dec 2019 06:50:56 GMT"
+                    ],
+                    "pattern": "^(.*)$"
+                },
+                "recordnumber": {
+                    "$id": "#/properties/ground/properties/recordnumber",
+                    "type": "integer",
+                    "title": "The Recordnumber Schema",
+                    "default": 0,
+                    "examples": [
+                        4651635
+                    ]
+                },
+                "batteryVoltage": {
+                    "$id": "#/properties/ground/properties/batteryVoltage",
+                    "type": "number",
+                    "title": "The Batteryvoltage Schema",
+                    "default": 0.0,
+                    "examples": [
+                        12.17841
+                    ]
+                },
+                "airTemperature": {
+                    "$id": "#/properties/ground/properties/airTemperature",
+                    "type": "number",
+                    "title": "The Airtemperature Schema",
+                    "default": 0.0,
+                    "examples": [
+                        5.833
+                    ]
+                },
+                "humidity": {
+                    "$id": "#/properties/ground/properties/humidity",
+                    "type": "number",
+                    "title": "The Humidity Schema",
+                    "default": 0.0,
+                    "examples": [
+                        93.14
+                    ]
+                },
+                "5cmTemperature": {
+                    "$id": "#/properties/ground/properties/5cmTemperature",
+                    "type": "number",
+                    "title": "The 5cmtemperature Schema",
+                    "default": 0.0,
+                    "examples": [
+                        3.69754
+                    ]
+                },
+                "10cmTemperature": {
+                    "$id": "#/properties/ground/properties/10cmTemperature",
+                    "type": "number",
+                    "title": "The 10cmtemperature Schema",
+                    "default": 0.0,
+                    "examples": [
+                        3.610809
+                    ]
+                },
+                "20cmTemperature": {
+                    "$id": "#/properties/ground/properties/20cmTemperature",
+                    "type": "number",
+                    "title": "The 20cmtemperature Schema",
+                    "default": 0.0,
+                    "examples": [
+                        4.237427
+                    ]
+                },
+                "50cmTemperature": {
+                    "$id": "#/properties/ground/properties/50cmTemperature",
+                    "type": "number",
+                    "title": "The 50cmtemperature Schema",
+                    "default": 0.0,
+                    "examples": [
+                        6.3591
+                    ]
+                },
+                "100cmTemperature": {
+                    "$id": "#/properties/ground/properties/100cmTemperature",
+                    "type": "number",
+                    "title": "The 100cmtemperature Schema",
+                    "default": 0.0,
+                    "examples": [
+                        8.270172
+                    ]
+                },
+                "rainDropCount_2": {
+                    "$id": "#/properties/ground/properties/rainDropCount_2",
+                    "type": "integer",
+                    "title": "The Raindropcount_2 Schema",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "rainDropCount_kip": {
+                    "$id": "#/properties/ground/properties/rainDropCount_kip",
+                    "type": "integer",
+                    "title": "The Raindropcount_kip Schema",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "evapoTranspiration": {
+                    "$id": "#/properties/ground/properties/evapoTranspiration",
+                    "type": "number",
+                    "title": "The Evapotranspiration Schema",
+                    "default": 0.0,
+                    "examples": [
+                        -36.49881
+                    ]
+                }
+            }
+        }
+    }
+}
